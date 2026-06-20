@@ -1,0 +1,27 @@
+/* Global, mobile-first base styles. Structural only — no visual design work yet. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* System font stack only — no remote fonts. */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  /* Prevent horizontal scrolling on narrow viewports. */
+  overflow-x: hidden;
+}
+
+/* Visible focus styles for keyboard users on every interactive element. */
+:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}

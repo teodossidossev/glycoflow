@@ -1,0 +1,60 @@
+/* Mobile-first application shell layout. Structural only. */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  /* Dynamic viewport height so mobile browser chrome does not clip the layout. */
+  min-height: 100dvh;
+  /* Constrain to a phone-friendly width and centre on larger screens. */
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.app-header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.app-main {
+  flex: 1 1 auto;
+  padding: 1rem;
+  /* Keep content clear of the fixed bottom navigation and the device safe area. */
+  padding-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+}
+
+.app-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  border-top: 1px solid #e0e0e0;
+  background: #ffffff;
+  /* Keep navigation above the home indicator on devices with a safe area. */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.app-nav__link {
+  flex: 1 1 0;
+  /* Touch target at least ~44 x 44 CSS pixels. */
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #444444;
+  font-size: 0.875rem;
+}
+
+.app-nav__link.active {
+  color: #1a73e8;
+  font-weight: 600;
+}

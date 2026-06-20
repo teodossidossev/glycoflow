@@ -8,6 +8,11 @@ frontend/dist/
 dist/
 frontend/.angular/
 .angular/
+out-tsc/
+bazel-out/
+.sass-cache/
+__screenshots__/
+testem.log
 *.tsbuildinfo
 
 # Test and coverage output
