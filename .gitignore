@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+backend/vendor/
+vendor/
+
+# Angular / Node build artifacts
+frontend/dist/
+dist/
+frontend/.angular/
+.angular/
+*.tsbuildinfo
+
+# Test and coverage output
+coverage/
+frontend/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+*.local.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary uploads and retained private images
+storage/
+private-storage/
+backend/storage/
+uploads/
+tmp/
+temp/
+
+# Local database dumps
+*.sql.gz
+*.dump
+database/dumps/
+*.local.sql
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep these tracked (negated ignores)
+!.env.example
+!database/migrations/
+!database/seeds/
+!database/imports/
+!**/.gitkeep
