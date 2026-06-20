@@ -1,0 +1,42 @@
+<header class="app-header">
+  <p class="app-title">{{ title() }}</p>
+</header>
+
+<main class="app-main" role="main">
+  <router-outlet />
+</main>
+
+<nav class="app-nav" aria-label="Primary">
+  <a
+    routerLink="/home"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="app-nav__link"
+  >
+    Home
+  </a>
+  <a
+    routerLink="/history"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="app-nav__link"
+  >
+    History
+  </a>
+  <a
+    routerLink="/analysis"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="app-nav__link"
+  >
+    Analysis
+  </a>
+  <a
+    routerLink="/settings"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    class="app-nav__link"
+  >
+    Settings
+  </a>
+</nav>
